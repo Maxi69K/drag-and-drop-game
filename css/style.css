@@ -1,0 +1,106 @@
+/*   random images:      https://source.unsplash.com/random    */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/**********************************************
+                Global styles
+**********************************************/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(157, 233, 122);
+  text-align: center;
+  text-shadow: 2px 3px 3px;
+  position: relative;
+  z-index: 1;
+}
+
+header h1#title {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+}
+
+main.shells-container {
+  max-width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.shells-container .shell {
+  display: inline-block;
+  cursor: pointer;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.shells-container .shell:hover {
+  background-color: #ddd;
+}
+
+.hovered {
+  background-color: #ddd;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+.pea {
+  background: url(https://source.unsplash.com/nwjRmbXbLgw) center/cover;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  /* Hide pea */
+  opacity: 0;
+}
+
+.pea:active {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  font-size: 10rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+}
+
+h2.win,
+h2.lose {
+  position: relative;
+  font-size: 8rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  top: 70vh;
+  margin: auto;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+
+
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 576px) {}
